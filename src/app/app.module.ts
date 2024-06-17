@@ -3,20 +3,29 @@ import { BrowserModule, provideClientHydration } from '@angular/platform-browser
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
+import { AllCourseComponent } from './all-course/all-course.component';
+import { BlogComponent } from './blog/blog.component';
+import { ContactComponent } from './contact/contact.component';
+import { PagesComponent } from './pages/pages.component';
+import { RouterModule } from '@angular/router';
 
-import { CommonModule } from '@angular/common';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { ToastrModule } from 'ngx-toastr';
+
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    AllCourseComponent,
+    BlogComponent,
+    ContactComponent,
+    PagesComponent
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule,CommonModule,
-    BrowserAnimationsModule,ToastrModule.forRoot(),
+    BrowserModule,RouterModule,AppRoutingModule
+    
   ],
   providers: [
     provideClientHydration()

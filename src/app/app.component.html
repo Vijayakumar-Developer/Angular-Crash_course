@@ -1,1 +1,23 @@
-<h1 class="animate__animated animate__bounce">An animated element</h1>
+<header>
+  <div class="container mx-auto bg-red-300">
+    <ul class="flex">
+      <li class="mx-3 px-3 py-3">
+        <a [routerLink]="['']">Home</a>
+      </li>
+      <li class="mx-3 px-3 py-3">
+        <a [routerLink]="['all-course']">All Courses</a>
+      </li>
+      <li class="mx-3 px-3 py-3">
+        <a [routerLink]="['pages']">Pages</a>
+      </li>
+      <li class="mx-3 px-3 py-3">
+        <a [routerLink]="['blog']">Blog</a>
+      </li>
+      <li class="mx-3 px-3 py-3">
+        <a [routerLink]="['contact']">Contact</a>
+      </li>
+    </ul>
+  </div>
+</header>
+<router-outlet></router-outlet>
+<footer>Footer</footer>
