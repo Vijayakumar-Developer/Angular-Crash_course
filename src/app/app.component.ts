@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ToastrService } from 'ngx-toastr';
+
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ang_crashmodule';
+  constructor(private toastr: ToastrService) {
+
+    this.toastr.success('Hello Vijay!', 'Toastr fun!');
+
+  }
+
+
 }
