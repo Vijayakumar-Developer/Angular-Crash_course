@@ -14,6 +14,7 @@ import { AuthLinksComponent } from './shared/auth-links/auth-links.component';
 import { SocialLinksComponent } from './shared/social-links/social-links.component';
 import { PhoneComponent } from './shared/phone/phone.component';
 import { EmailComponent } from './shared/email/email.component';
+import { ButttonComponent } from './shared/buttton/buttton.component';
 
 
 
@@ -31,7 +32,8 @@ import { EmailComponent } from './shared/email/email.component';
     AuthLinksComponent,
     SocialLinksComponent,
     PhoneComponent,
-    EmailComponent
+    EmailComponent,
+    ButttonComponent
   ],
   imports: [
     BrowserModule,RouterModule,AppRoutingModule
