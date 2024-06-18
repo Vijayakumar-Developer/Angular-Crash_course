@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,8 +6,24 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'ang_crashmodule';
   
+  isMenuScrolled= false;
+  isSidebarShowing =false;
+
+  @HostListener('window:scroll',['$event']) scrollcheck(){
+    if(window.pageYOffset > 100)
+      this.isMenuScrolled =true;
+    else
+    this.isMenuScrolled= false;
+  console.log(this.isMenuScrolled)
+
+  }
+ openSideBar(){
+  this.isSidebarShowing=true;
+ }  
+ closeSideBar(){
+  this.isSidebarShowing=false;
+ }
 
 
 }

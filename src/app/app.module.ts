@@ -9,6 +9,11 @@ import { BlogComponent } from './blog/blog.component';
 import { ContactComponent } from './contact/contact.component';
 import { PagesComponent } from './pages/pages.component';
 import { RouterModule } from '@angular/router';
+import { MenuComponent } from './shared/menu/menu.component';
+import { AuthLinksComponent } from './shared/auth-links/auth-links.component';
+import { SocialLinksComponent } from './shared/social-links/social-links.component';
+import { PhoneComponent } from './shared/phone/phone.component';
+import { EmailComponent } from './shared/email/email.component';
 
 
 
@@ -21,7 +26,12 @@ import { RouterModule } from '@angular/router';
     AllCourseComponent,
     BlogComponent,
     ContactComponent,
-    PagesComponent
+    PagesComponent,
+    MenuComponent,
+    AuthLinksComponent,
+    SocialLinksComponent,
+    PhoneComponent,
+    EmailComponent
   ],
   imports: [
     BrowserModule,RouterModule,AppRoutingModule
