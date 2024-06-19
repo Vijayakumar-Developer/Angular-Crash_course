@@ -9,7 +9,8 @@ export class ButttonComponent {
  
   @Input('size')
   size='S'; //S,M,L
-  shades='NA';//D,L,W,NA
+  @Input('shade');
+  shade='NA';//D,L,W,NA
   animation='NA';//C,F,NA
 
   constructor(){

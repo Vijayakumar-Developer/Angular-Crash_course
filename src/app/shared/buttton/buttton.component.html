@@ -1,9 +1,8 @@
-<button class=" {{this.shades==='D'?'border bg-emerald-600 text-emerald-50 
- border-emerald-600 ':''
-this.shades==='L'?'':''
-this.shades==='W'?'':''
-text-emerald-600}}
- {{this.size ==='S'?'px-5 py-2 rounded-lg font-medium text-md':
- this.size==='M'?'px-7 py-3 rounded-lg font-medium text-lg':
- 'px-8 py-4 rounded-lg font-semibold text-lg'}}">
+<button class=" {{this.shade==='D'?
+'border bg-emerald-600 text-emerald-50 border-emerald-600 ':
+this.shade==='L'?
+'border bg-emerald-50 text-emerald-600 border-emerald-600 hover:text-emerald-50 ':
+this.shade==='W'?
+'border bg-white text-slate-700 border-emerald-600 hover:text-emerald-50 ':
+'text-emerald-600 hover:text-slate-700'}}">
     Click Me</button>
