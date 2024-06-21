@@ -8,11 +8,17 @@ import { Component, Input } from '@angular/core';
 export class ButttonComponent {
  
   @Input('size')
-  size='S'; //S,M,L
-  @Input('shade');
-  shade='NA';//D,L,W,NA
-  animation='NA';//C,F,NA
+  size = 'S'; // S,M,L
 
+  @Input('shade')
+  shade = 'NA'; // D,L,W,NA
+
+  @Input('animation')
+  animation='F'; // C,F
+ 
+  @Input('name')
+  name=''; 
+  
   constructor(){
 
   }
